@@ -1,24 +1,24 @@
 {
-  "name": "goit-js-hw-12-countries",
+  "name": "goit-js-hw-12-practice",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://github.com/bondarchugtr/goit-js-hw-12-countries#readme",
+  "homepage": "https://github.com/bondarchugtr/goit-js-hw-12-practice#readme",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-12-practice/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bondarchugtr/goit-js-hw-12-countries.git"
+    "url": "git+https://github.com/bondarchugtr/goit-js-hw-12-practice.git"
   },
   "keywords": [],
   "author": "Bondarchuk Valentin <bondarchukgtr@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bondarchugtr/goit-js-hw-12-countries"
+    "url": "https://github.com/bondarchugtr/goit-js-hw-12-practice"
   },
   "devDependencies": {
     "@pnotify/core": "^5.2.0",
@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "axios": "^0.23.0",
     "handlebars": "^4.7.7",
     "lodash.debounce": "^4.0.8"
   }

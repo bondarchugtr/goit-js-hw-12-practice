@@ -1,79 +1,61 @@
-
-
-body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  background-color: rgb(236, 209, 186);
-  color: #424242;
-  padding: 16px;
+#list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
-.form__country{
-text-align: center;
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
 }
 
-.form__country-input{
-    width: 1200px;
-    height: 35px;
-    text-align: center;    
+.load-more {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(255, 27, 0);
+  background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
 }
-
-.country__title{
-    text-align: center;
-    margin-bottom: 30px;
+.load-more:hover {
+  color: #f0094a;
+  background: transparent;
+  box-shadow: none;
 }
-
-.country__container{
-    display: flex;
-    justify-content: space-around;
+.load-more:before,
+.load-more:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #f0094a;
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
+  transition: 400ms ease all;
 }
-
-.country__option-card{
-    font-weight: 700;
-    font-size: 20px;
-
+.load-more:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
 }
-
-.country__style{
-    font-weight: 400;
-    margin-left: 5px;
-    font-size: 18px;
-
+.load-more:hover:before,
+.load-more:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
-
-.country__list{
-    display: block;
-    text-align: center;
-}
-.country__list:not(:last-chaeld){
-margin-bottom: 10px;
-}
-
-
-.country__list-item{
-    display: block;
-    cursor: pointer;
-}
-
-.country__list-item:not(:last-child){
-        margin-bottom: 10px;
-}
-
-.country__list-item:hover,
-.country__list-item:focus{
-    color: rgb(235, 185, 91);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-
-
-
-
-
-
-
-
-
-
