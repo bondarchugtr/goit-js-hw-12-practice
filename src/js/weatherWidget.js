@@ -14,7 +14,7 @@ function getWeathere(e) {
     getWeatherData(e.target.elements.searchBar.value, weatherContainer)
     searchForm.reset()
 }
-// console.log(weatherTemplate)
+
 if (!card.classList.contains('isHide')) {
     searchForm.removeEventListener('submit', getWeathere)
 }
